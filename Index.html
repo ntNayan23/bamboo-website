@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/f20a2389dc.js" crossorigin="anonymous"></script>
+  <title>Bamboo's/Things</title>
+</head>
+
+<body>
+
+
+
+
+  <!-- *************************** NAVBAR START HERE *************************************************
+    **************************************************************************************************** -->
+  <header>
+    <div class="container-fluid p-0  ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid me-auto">
+          <a class="navbar-brand ps-4 fw-bold" href="#">Bamboo's/Things</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="me-auto"></div>
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <div class="ms-auto"></div>
+            <form class="d-flex">
+              <button type="button" class="btn btn-outline-success px-4 me-2" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" style="letter-spacing: 2px;">
+                LOGIN/SIGNUP
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+  <!-- *************************** MODAL STARTS HERE  *************************************************
+    **************************************************************************************************** -->
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container align-content-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true">LOGIN</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false">SIGNUP</button>
+              </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="CONTAINER-FORM">
+                  <form class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- *************************** MODAL ENDS HERE  *************************************************
+    **************************************************************************************************** -->
+
+
+
+
+  <!-- *************************** NAVBAR END HERE *************************************************
+    **************************************************************************************************** -->
+
+
+
+  <main>
+    <!-- *************************** CAROUSEL START HERE *************************************************
+    **************************************************************************************************** -->
+    <section>
+      <div class="container-fluid p-0  ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col  p-sm-0 ">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active  transition: transform 2s ease, opacity .5s ease-out "
+                  data-interval=" 1000">
+                  <img src=" img/dear.jpeg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item  transition: transform 2s ease, opacity .5s ease-out" data-interval=" 1000">
+                  <img src="img/rabbit.jpeg" class="d-block  w-100 " alt="...">
+                </div>
+                <div class="carousel-item  transition: transform 2s ease, opacity .5s ease-out" data-interval=" 1000">
+                  <img src="img/5.jpg" class="d-block  w-100" alt="...">
+                </div>
+                <div class="carousel-item  transition: transform 2s ease, opacity .5s ease-out" data-interval=" 1000">
+                  <img src="img/flower pot.jpeg" class="d-block  w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *************************** CAROUSEL END HERE *************************************************
+    **************************************************************************************************** -->
+
+
+
+
+
+    <!-- *************************** GROUP CARD START HERE *************************************************
+    **************************************************************************************************** -->
+    <section>
+      <div class="container shadow mt-lg-5 mt-sm-5 p-0 pt-5">
+        <!-- card group 1 start here  -->
+        <div class="card-group ">
+          <div class="card">
+            <img src="img/cup2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" style="text-align: center;">
+              <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+              <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+              <p class="card-text">
+              <h3 class="text-muted">₹149.00</h3>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/flower pot.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" style="text-align: center;">
+              <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+              <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+              <p class="card-text">
+              <h3 class="text-muted">₹149.00</h3>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/lamp.jpeg" class="card-img-top " alt="...">
+            <div class="card-body" style="text-align: center; ">
+              <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+              <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+              <p class="card-text">
+              <h3 class="text-muted">₹149.00</h3>
+              </p>
+            </div>
+          </div>
+          <!-- card group 1 ends here  -->
+          <!-- card group 2 start here  -->
+          <div class="card-group">
+            <div class="card">
+              <img src="img/holder.jpeg" class="card-img-top" alt="...">
+              <div class="card-body" style="text-align: center;">
+                <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+                <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+                <p class="card-text">
+                <h3 class="text-muted">₹149.00</h3>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cup.jpeg" class="card-img-top" alt="...">
+              <div class="card-body" style="text-align: center;">
+                <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+                <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+                <p class="card-text">
+                <h3 class="text-muted">₹149.00</h3>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/rabbit.jpeg" class="card-img-top" alt="...">
+              <div class="card-body" style="text-align: center;">
+                <small class="card-title">Bamboo Products, Bamboo Toothbrushes</small>
+                <p class="card-text">Bamboo Toothbrush Charcoal Nano Bristles Round Handle</p>
+                <p class="card-text">
+                <h3 class="text-muted">₹149.00</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card group 1 ends here  -->
+        </div>
+        <!-- *************************** GROUP CARD END HERE *************************************************
+    **************************************************************************************************** -->
+
+
+
+        <!-- *************************** button start here  *************************************************
+    **************************************************************************************************** -->
+    </section>
+    <section class="section-3 container text-center mt-5">
+      <button class="btn m-5  " type="submit">EXPLORE MORE PRODUCTS</button>
+    </section>
+
+    <!-- *************************** button end here  ************************************************* **************************************************************************************************** -->
+
+
+
+    <!--********** ********************CATEGORY SECTION START HERE****************************************** ***************************************************************************************************** -->
+
+    <section class="section-category container text-center  shadow ">
+      <div class="row justify-content-evenly p-2 ">
+        <div class="col-md-4   " style="width: 18rem;  ">
+          <img src="img/Bamboo-Toothbrushes.jpg" class="img-thumnails rounded-circle" alt="">
+          <p class="card-text mt-3 mb-4">Bamboo Toothbrushes</p>
+        </div>
+        <div class="col-md-4  " style="width: 18rem; ">
+          <img src="img/Bamboo-Products-1.jpg" class="img-thumnails rounded-circle" alt="">
+          <p class="card-text mt-3 mb-4">Bamboo Toothbrushes</p>
+        </div>
+        <div class="col-md-4  " style="width: 18rem;  ">
+          <img src="img/Corporate-gifts-2.jpg" class="img-thumnails rounded-circle  alt="">
+          <p class=" card-text mt-3 mb-4">Bamboo Toothbrushes</p>
+        </div>
+      </div>
+    </section>
+
+    <!--********** ********************CATEGORY SECTION END HERE****************************************** ***************************************************************************************************** -->
+
+
+
+    <!--**************************ACHIEVEMENT SECTION START  HERE****************************************** ***************************************************************************************************** -->
+
+
+    <section class="section-achievement container text-center mt-5 shadow " style="margin-top: 30rem;">
+      <div class="row justify-content-evenly pt-5 ">
+        <div class="col-md-3   ">
+          <h3 class="card-title">92213</h3>
+          <p class="card-text mt-3 mb-4">Happy Customers</p>
+        </div>
+        <div class="col-md-3  ">
+          <h3 class="card-title">2001083</h3>
+          <p class="card-text mt-3 mb-4">Kg Plastic pollution saved</p>
+        </div>
+        <div class="col-md-3  ">
+          <h3 class="card-title">93201</h3>
+          <p class=" card-text mt-3 mb-4">Completed order</p>
+        </div>
+        <div class="col-md-3  ">
+          <h3 class="card-title">4100+</h3>Completed order</p>
+        </div>
+      </div>
+    </section>
+
+    <!--**********************ACHIEVEMENT SECTION END HERE****************************************** ***************************************************************************************************** -->
+
+
+    <!--**************************BRAND LOGO START  HERE****************************************** ***************************************************************************************************** -->
+
+
+    <section class="section-category container text-center  shadow " style="margin-top: 5rem;">
+      <div class="row justify-content-evenly p-2 ">
+        <div class="col-md-2  py-3 " style="width: 18rem;  ">
+          <img src="img/Big-bazar.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-md-2 py-3  " style="width: 18rem; ">
+          <img src="img/parx.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-md-2 py-3 " style="width: 18rem;  ">
+          <img src="img/polycab.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-md-2 py-3 " style="width: 18rem;  ">
+          <img src="img/Tedx.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-md-2 py-3 " style="width: 18rem;  ">
+          <img src="img/saarc.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-md-2  py-3" style="width: 18rem;  ">
+          <img src="img/thoughtworks.jpg" class="img-fluid" alt="">
+
+        </div>
+      </div>
+    </section>
+
+    <!--**************************BRAND LOGO END  HERE****************************************** ***************************************************************************************************** -->
+  </main>
+  <footer>
+    <div class="container-fluid " style="margin-top: 5rem;">
+      <div class="row text-left ">
+        <div class="col-md-5 mb-4 ">
+          <h2 class="text-dark ">Contact us</h2>
+          <div class="content container ">
+
+            <i class="fa-light fa-location-dot w-auto" ></i>
+            <p class="card-text ">HEADQUARTERS:
+              Bamboo India
+              PO Box : 1115
+              Pune 411018, India</p>
+            
+          <i class="fa-thin fa-mobile-screen-button"></i>
+          <p class="card-text ">Phone:
+            +91-20-67264712</p>
+          
+
+          <i class="fa-thin fa-envelope"> </i>
+          <p class="card-text ">Email:
+            info@bambooindia.com</p>
+          </div>
+          </div>
+          <div class="col-md-5 mb-4  ">
+          <h2 class="text-dark ">Follow us</h2>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+
+        </div>
+        <div class="col-md-2 mb-4 ">
+          <h2 class="text-dark ">Policy</h2>
+          <p class="card-text fw-bold">Bamboo India Policies</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

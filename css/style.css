@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: whitesmoke;
+}
+.carousel-item img{
+    width: auto;
+    height: 100vh;
+    max-height: 100vh;
+    object-fit: fill;
+}
+.section-3 .btn{
+    color: #fff;
+    border-color: #ebebeb;
+    background-color: #307060;
+    outline: #ebebeb;
+    font-size: 18px;
+}
+.section-3 :hover{
+    color: #666;
+    border-color: #ebebeb;
+    background-color: #ebebeb;
+}
